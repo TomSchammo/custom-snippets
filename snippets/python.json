@@ -1,0 +1,8 @@
+
+{
+    "printf": {
+        "prefix": "printf",
+        "body": "print(f\"{$0}\")",
+        "description": "Print format"
+    }
+}
