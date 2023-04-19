@@ -2,7 +2,7 @@
 {
     "settings": {
         "prefix": "settings",
-        "body": "---\n${1:lang}: ${2:de}\n---\n",
+        "body": "---\n${1:lang}: ${2:de-DE}\n---\n",
         "description": "YAML settings for pandoc"
     },
     "header": {
