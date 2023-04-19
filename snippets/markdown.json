@@ -1,0 +1,8 @@
+
+{
+    "printf": {
+        "prefix": "settings",
+        "body": "---\n${0:lang}: ${1: de}---\n",
+        "description": "YAML settings for pandoc"
+    }
+}
