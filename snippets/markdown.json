@@ -2,7 +2,7 @@
 {
     "printf": {
         "prefix": "settings",
-        "body": "---\n${0:lang}: ${1: de}---\n",
+        "body": "---\n${0: lang}: ${1: de}\n---\n",
         "description": "YAML settings for pandoc"
     }
 }
