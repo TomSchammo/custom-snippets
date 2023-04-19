@@ -4,5 +4,10 @@
         "prefix": "settings",
         "body": "---\n${1:lang}: ${2:de}\n---\n",
         "description": "YAML settings for pandoc"
+    },
+    "header": {
+        "prefix": "header",
+        "body": "header-includes: |\n\\usepackage{fancyhdr}\n\\pagestyle{fancy}\n\\fancyhead[L]{${1:left header}}\n\\fancyhead[C]{${2:center header}}\n\\fancyhead[R]{${3:right header}}",
+        "description": "Pandoc YAML settings for a header"
     }
 }
