@@ -1,0 +1,24 @@
+
+{
+    "main": {
+        "prefix": "main",
+        "body": "func main() {\n${1}\n}",
+        "description": "Create main function"
+    },
+    "struct": {
+        "prefix": "struct",
+        "body": "type ${1:name} struct {\n${2}\n}",
+        "description": "Create type struct"
+    },
+    "forij": {
+        "prefix": "forij",
+        "body": "for i := ${1:0}; i < ${2:bound}; i++ {\nfor j := ${3:0}; j < ${4:bound}; j++ {\n${5}\n}\n}",
+        "description": "Create nested for loops loops"
+    },
+    "while": {
+        "prefix": "while",
+        "body": "for ${1:n} < ${2:bound} {\n${3}\n}",
+        "description": "Create a while-equivalent loop"
+    }
+
+}
