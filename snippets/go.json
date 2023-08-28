@@ -12,7 +12,7 @@
     },
     "forij": {
         "prefix": "forij",
-        "body": "for i := ${1:0}; i < ${2:bound}; i++ {\nfor j := ${3:0}; j < ${4:bound}; j++ {\n${5}\n}\n}",
+        "body": "for i := ${1:0}; i < ${2:bound}; i++ {\n   for j := ${3:0}; j < ${4:bound}; j++ {\n        ${5}\n  }\n}",
         "description": "Create nested for loops loops"
     },
     "while": {
