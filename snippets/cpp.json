@@ -1,0 +1,14 @@
+{
+  "header_guard": {
+    "prefix": "header_guard",
+    "body": [
+      "#ifndef ${TM_FILENAME_BASE/(.*)/_${1:/upcase}/}${TM_FILENAME/.*\\.(.*)/_${1:/upcase}/}",
+      "#define ${TM_FILENAME_BASE/(.*)/_${1:/upcase}/}${TM_FILENAME/.*\\.(.*)/_${1:/upcase}/}",
+      "",
+      "$0",
+      "",
+      "#endif  // ${TM_FILENAME_BASE/(.*)/_${1:/upcase}/}${TM_FILENAME/.*\\.(.*)/_${1:/upcase}/}"
+    ],
+    "description": "header guard. format :\n\t<filename>_<extension>"
+  }
+}

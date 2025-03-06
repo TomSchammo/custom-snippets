@@ -16,6 +16,10 @@
       {
         "language": "go",
         "path": "./snippets/go.json"
+      },
+      {
+        "language": "cpp",
+        "path": "./snippets/cpp.json"
       }
     ]
   }
