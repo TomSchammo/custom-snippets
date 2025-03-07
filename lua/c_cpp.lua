@@ -36,7 +36,7 @@ ls.add_snippets("cpp", {
             #ifndef {}
             #define {}
             {}
-            #endif // {}
+            #endif // !{}
         ]],
             { d(1, guard_name), rep(1), i(0), rep(1) }
         )
@@ -54,7 +54,7 @@ ls.add_snippets("c", {
             #ifndef {}
             #define {}
             {}
-            #endif // {}
+            #endif // !{}
         ]],
             { d(1, guard_name), rep(1), i(0), rep(1) }
         )
