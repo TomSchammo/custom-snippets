@@ -25,38 +25,29 @@ local guard_name = function(_, parent)
     return sn(nil, { i(1, header_name) })
 end
 
+local header_guard_snippet = s(
+    "header_guard",
+    fmt(
+        [[
+            #ifndef {}
+            #define {}
+
+            {}
+
+            #endif // !{}
+        ]],
+        { d(1, guard_name), rep(1), i(0), rep(1) }
+    )
+)
+
 -- C++
 
 ls.add_snippets("cpp", {
-
-    s(
-        "header_guard",
-        fmt(
-            [[
-            #ifndef {}
-            #define {}
-            {}
-            #endif // !{}
-        ]],
-            { d(1, guard_name), rep(1), i(0), rep(1) }
-        )
-    ),
+    header_guard_snippet,
 })
 
 -- C
 
 ls.add_snippets("c", {
-
-    s(
-        "header_guard",
-        fmt(
-            [[
-            #ifndef {}
-            #define {}
-            {}
-            #endif // !{}
-        ]],
-            { d(1, guard_name), rep(1), i(0), rep(1) }
-        )
-    ),
+    header_guard_snippet,
 })
