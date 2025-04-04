@@ -34,7 +34,7 @@ local header_guard_snippet = s(
 
             {}
 
-            #endif // !{}
+            #endif // {}
         ]],
         { d(1, guard_name), rep(1), i(0), rep(1) }
     )
