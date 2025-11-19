@@ -1,0 +1,23 @@
+{
+  "name": "custom-snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "python",
+        "path": "./vscode/snippets/python.json"
+      },
+      {
+        "language": "markdown",
+        "path": "./vscode/snippets/markdown.json"
+      },
+      {
+        "language": "go",
+        "path": "./vscode/snippets/go.json"
+      }
+    ]
+  }
+}
+
